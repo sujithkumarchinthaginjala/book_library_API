@@ -77,7 +77,20 @@ Tomcat started on port(s): 8080 (http) with context path '/Book.html and /User.h
 - `PUT /api/Book/{id}` - Update an existing book.
 - `DELETE /api/Book/{id}` - Delete a book by its ID.
 ```
+# **Sample API Request for Adding a New Book**
+```
+POST /api/Book
+Content-Type: application/json
+
+{
+  "title": "The Great Gatsby",
+  "author": "F. Scott Fitzgerald",
+  "isbn": "124352",
+  "publisher": "own_publish"
+}
+```
 ---
+
 ### **User**
 ```
 - `GET /api/User` - Retrieve a list of all Users.
@@ -85,6 +98,19 @@ Tomcat started on port(s): 8080 (http) with context path '/Book.html and /User.h
 - `POST /api/User` - Add a new User to the library.
 - `PUT /api/User/{id}` - Update an existing User.
 - `DELETE /api/User/{id}` - Delete a User by its ID.
+```
+# **Sample API Request for Adding a New User**
+```
+POST /api/User
+Content-Type: application/json
+
+{
+  "id": "1",
+  "name": "F. Scott Fitzgerald",
+  "role": " librarian"
+  "email": "demo123@gmail.com",
+  "password": "new_password123"
+}
 ```
 ---
 ## **Testing**
