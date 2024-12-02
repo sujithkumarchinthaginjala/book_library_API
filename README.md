@@ -37,7 +37,7 @@ Clone the Book Library API repository to your local machine:
 ```bash
 git clone https://github.com/yourusername/book-library-api.git
 cd book-library-api
-
+-----------------------------------------------------------------------------------------
 ### Database Setup
 1. Create a new database for the application in MySQL:
    ```sql
@@ -49,12 +49,12 @@ spring.datasource.url=jdbc:mysql://localhost:3306/booklibrary
 spring.datasource.username=root
 spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
-
+------------------------------------------------------------------------------------------------
 ### Step 3: Install Dependencies
 Ensure all required dependencies are installed by running:
 ```bash
 mvn clean install
-
+---------------------------------------------------------------------------------------------
 ### Running the Application
 
 #### Start the Application
@@ -64,11 +64,11 @@ mvn spring-boot:run
 
 The application will start on port 8080 by default. You should see output similar to:
 Tomcat started on port(s): 8080 (http) with context path '/Book.html and /User.html'
-
+--------------------------------------------------------------------------------------------------
 Access the Application
 Once running, visit the API base URL in your browser or API client:
 http://localhost:8080
-
+----------------------------------------------------------------------------------------------------
 API Endpoints
 Books
 GET /api/books - Retrieve a list of all books.
@@ -76,7 +76,7 @@ curl -X GET http://localhost:8080/api/books
 
 GET /api/books/{id} - Retrieve a specific book by its ID.
 curl -X GET http://localhost:8080/api/books/1
-
+----------------------------------------------------------------------------------------------
 POST /api/books - Add a new book.
 Request Body (JSON):
 {
@@ -99,7 +99,7 @@ Request Body (JSON):
 }
 Command:
 curl -X PUT -H "Content-Type: application/json" -d '{"title":"The Great Gatsby (Updated)","author":"F. Scott Fitzgerald","category":"Classic Fiction","isbn":"9780743273565"}' http://localhost:8080/api/books/1
-
+------------------------------------------------------------------------------------------------------------------------------------------------------
 Authors
 GET /api/authors - Retrieve a list of all authors.
 curl -X GET http://localhost:8080/api/authors
@@ -115,8 +115,8 @@ GET /api/categories/{id} - Retrieve a category by its ID.
 bash
 Copy code
 curl -X GET http://localhost:8080/api/categories/1
-
-Testing
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+###Testing
 Run Unit Tests
 Execute the following command to run the unit tests:
 
@@ -127,11 +127,10 @@ Results will be displayed in the console. Detailed reports are generated in the 
 Run Integration Tests
 Run the integration tests using:
 
-Copy code
 mvn verify
 This will generate integration test reports in target/failsafe-reports.
-
-Troubleshooting
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+###Troubleshooting
 Common Issues and Solutions:
 404 Not Found Error:
 
@@ -142,20 +141,8 @@ Verify that the MySQL server is running and the credentials in application.prope
 Dependency Issues:
 
 Run mvn clean install to ensure all dependencies are downloaded and installed.
-
-Troubleshooting
-Common Issues and Solutions:
-404 Not Found Error:
-
-Ensure the API is running and you are accessing the correct endpoints.
-Database Connection Issues:
-
-Verify that the MySQL server is running and the credentials in application.properties are correct.
-Dependency Issues:
-
-Run mvn clean install to ensure all dependencies are downloaded and installed.
-
-Deployment Guide
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+###Deployment Guide
 To deploy the Book Library API:
 
 Build the application using Maven:
