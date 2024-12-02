@@ -13,7 +13,6 @@ This is a Book Library API built using **Spring Boot**. The API allows users to 
 5. [Testing](#testing)
 6. [Troubleshooting](#troubleshooting)
 7. [Deployment Guide](#deployment-guide)
-8. [License](#license)
 
 ---
 
