@@ -55,7 +55,7 @@ spring.jpa.hibernate.ddl-auto=update
 mvn clean install
 ```
 
-## **Running the Application**
+# **Step 4: Running the Application**
 ```
 mvn spring-boot:run
 ```
@@ -66,7 +66,7 @@ Run the application locally to start the server and confirm it's running on port
 Tomcat started on port(s): 8080 (http) with context path '/Book.html and /User.html'
 ```
 ---
-
+# **Step 5: Checking API Endpoints**
 ## **API Endpoints**
 
 ### **Book**
@@ -113,7 +113,7 @@ Content-Type: application/json
 }
 ```
 ---
-## **Testing**
+# **Step 6: Testing**
 
 ### **Unit Tests**
 
