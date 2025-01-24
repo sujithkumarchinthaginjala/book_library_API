@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library System</title>
+    <link rel="stylesheet" href="Book.css">
+</head>
+<body>
+	<nav>
+	    <a href="/index.html">Book Management</a> |
+	    <a href="/users.html">User Management</a>
+	</nav>
+
+    <div class="container">
+        <h1>Library System</h1>
+        <div id="book-list">
+            <!-- Book list will be loaded here -->
+        </div>
+        <button onclick="showAddBookForm()">Add Book</button>
+        <div id="book-form" style="display: none;">
+            <h2>Add/Edit Book</h2>
+            <form id="bookForm">
+                <input type="hidden" id="bookId" />
+                <label>Title:</label>
+                <input type="text" id="title" required /><br />
+                <label>Author:</label>
+                <input type="text" id="author" required /><br />
+                <label>ISBN:</label>
+                <input type="text" id="isbn" required /><br />
+                <label>Publisher:</label>
+                <input type="text" id="publisher" /><br />
+                <button type="submit">Save</button>
+                <button type="button" onclick="hideAddBookForm()">Cancel</button>
+            </form>
+        </div>
+    </div>
+    <script src="Book.js"></script>
+</body>
+</html>
